@@ -172,12 +172,11 @@ class Drone():
                 n = NoFrameRecieved
                 raise n
 
-            """
-            The close video sub method.
-            Closes the video writer and writes it to the file,
-            Closes all windows for cv2
-            Joins the video thread to the main thread.
-            """
+        """
+        Closes the video writer and writes it to the file,
+        Closes all windows for cv2
+        Joins the video thread to the main thread.
+        """
         logging.info(f"Video is now closed. Written to: {self.fullFileName}")
         self.videoWriter.release()
         self.recording = False
