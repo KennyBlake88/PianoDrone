@@ -159,7 +159,7 @@ class Drone():
                 cv2.imshow("current droneFrame", cF)
                 
                 #OpenCV Requires this. So just pretend it isn't here.
-                if cv2.waitKey(10) == ord('q'):
+                if cv2.waitKey(1) == ord('q'):
                     break
 
                 #writes it.
